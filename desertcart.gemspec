@@ -1,11 +1,10 @@
 # frozen_string_literal: true
 
-# require_relative 'lib/desertcart/version'
+require_relative 'lib/desertcart/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'desertcart'
-  # spec.version       = Desertcart::VERSION
-  spec.version       = '1.0.0'
+  spec.version       = Desertcart::VERSION
   spec.authors       = ['Jozef Vaclavik']
   spec.email         = ['jozef@desertcart.com']
 
@@ -31,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'ledger_sync', '~> 2.2.0'
+  spec.add_development_dependency 'dotenv'
+  spec.add_development_dependency 'rubocop'
 end

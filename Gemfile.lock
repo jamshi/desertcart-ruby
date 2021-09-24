@@ -15,9 +15,11 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    ast (2.4.2)
     colorize (0.8.1)
     concurrent-ruby (1.1.9)
     diff-lcs (1.4.4)
+    dotenv (2.7.6)
     dry-configurable (0.12.1)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.5, >= 0.5.0)
@@ -100,12 +102,18 @@ GEM
     nokogiri (1.12.4-x86_64-linux)
       racc (~> 1.4)
     openssl (2.2.0)
+    parallel (1.21.0)
+    parser (3.0.2.0)
+      ast (~> 2.4.1)
     pd_ruby (0.2.3)
       colorize
     racc (1.5.2)
     rack (2.2.3)
+    rainbow (3.0.0)
     rake (13.0.6)
+    regexp_parser (2.1.1)
     resonad (1.4.0)
+    rexml (3.2.5)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
@@ -119,11 +127,24 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
     rspec-support (3.10.2)
+    rubocop (1.21.0)
+      parallel (~> 1.10)
+      parser (>= 3.0.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.9.1, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.11.0)
+      parser (>= 3.0.1.1)
+    ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     simply_serializable (1.5.1)
       fingerprintable (>= 1.2.1)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    unicode-display_width (2.1.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -131,8 +152,10 @@ PLATFORMS
 
 DEPENDENCIES
   desertcart!
+  dotenv
   rake (~> 13.0)
   rspec (~> 3.0)
+  rubocop
 
 BUNDLED WITH
-   2.2.15
+   2.2.26

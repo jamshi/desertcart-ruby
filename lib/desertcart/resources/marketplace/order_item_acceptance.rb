@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'order_item'
+
 module Desertcart
   module Marketplace
     class OrderItemAcceptance < Desertcart::Resource
