@@ -16,6 +16,8 @@ module Desertcart
               optional(:merchant_id).maybe(:string)
               optional(:currency_code).maybe(:string)
               optional(:price).maybe(:integer)
+              optional(:final_purchase_currency_code).maybe(:string)
+              optional(:final_pruchase_price).maybe(:integer)
               optional(:title).maybe(:string)
               optional(:state).maybe(:string)
               optional(:marketplace_shipping_state).maybe(:string)

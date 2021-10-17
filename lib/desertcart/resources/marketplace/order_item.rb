@@ -13,6 +13,8 @@ module Desertcart
       attribute :merchant_id, type: LedgerSync::Type::String
       attribute :currency_code, type: LedgerSync::Type::String
       attribute :price, type: LedgerSync::Type::Integer
+      attribute :final_purchase_currency_code, type: LedgerSync::Type::String
+      attribute :final_purchase_price, type: LedgerSync::Type::Integer
       attribute :title, type: LedgerSync::Type::String
       attribute :state, type: LedgerSync::Type::String
       attribute :marketplace_shipping_state, type: LedgerSync::Type::String

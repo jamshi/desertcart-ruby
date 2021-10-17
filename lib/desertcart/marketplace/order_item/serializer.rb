@@ -13,6 +13,8 @@ module Desertcart
         attribute :merchant_id
         attribute :currency_code
         attribute :price
+        attribute :final_purchase_currency_code
+        attribute :final_purchase_price
         attribute :title
         attribute :state
         attribute :marketplace_shipping_state
