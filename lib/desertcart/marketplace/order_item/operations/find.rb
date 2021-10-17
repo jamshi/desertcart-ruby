@@ -6,7 +6,7 @@ module Desertcart
       module Operations
         class Find < Desertcart::Operation::Find
           class Contract < LedgerSync::Ledgers::Contract
-            params do
+            params do # rubocop:disable Metrics/BlockLength
               required(:ledger_id).filled(:string)
               optional(:name).maybe(:string)
               optional(:store_uid).maybe(:string)
