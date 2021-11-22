@@ -1,6 +1,10 @@
 ## [Unreleased]
 
-## [1.1.2] - 2021-11-22
+## [1.1.4] - 2021-11-22
+
+- Fix: Wrong OrderItemAcceptance attribute type
+
+## [1.1.3] - 2021-11-22
 
 - Fix: Add final purchase details to OrderItemAcceptance resource
 

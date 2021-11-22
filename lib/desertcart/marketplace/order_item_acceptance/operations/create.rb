@@ -11,7 +11,7 @@ module Desertcart
             params do
               required(:order_item).maybe(:hash, Types::Reference)
               optional(:seller_reference_number).maybe(:string)
-              optional(:final_purchase_price).maybe(:string)
+              optional(:final_purchase_price).maybe(:integer)
               optional(:final_purchase_currency_code).maybe(:string)
             end
           end
