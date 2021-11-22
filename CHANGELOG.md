@@ -2,6 +2,10 @@
 
 ## [1.1.2] - 2021-11-22
 
+- Fix: Add final purchase details to OrderItemAcceptance resource
+
+## [1.1.2] - 2021-11-22
+
 - Feature: Add final purchase details to OrderItemAcceptance
 
 ## [1.1.0] - 2021-09-26
