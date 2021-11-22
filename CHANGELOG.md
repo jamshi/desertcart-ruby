@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [1.1.2] - 2021-11-22
+
+- Feature: Add final purchase details to OrderItemAcceptance
+
 ## [1.1.0] - 2021-09-26
 
 - Feature: Support Ruby 2.7 and newer

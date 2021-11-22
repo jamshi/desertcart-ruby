@@ -9,6 +9,8 @@ module Desertcart
           resource.order_item.ledger_id
         end
         attribute :seller_reference_number
+        attribute :final_purchase_price
+        attribute :final_purchase_currency_code
       end
     end
   end
