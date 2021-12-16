@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [1.1.5] - 2021-12-16
+
+- Chore: Update LedgerSync to 2.3.1
+
 ## [1.1.4] - 2021-11-22
 
 - Fix: Wrong OrderItemAcceptance attribute type
