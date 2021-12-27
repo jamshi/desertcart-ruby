@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    desertcart (1.1.5)
+    desertcart (1.2.0)
       ledger_sync (~> 2.3.1)
 
 GEM

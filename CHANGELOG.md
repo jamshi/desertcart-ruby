@@ -1,5 +1,11 @@
 ## [Unreleased]
 
+## [1.2.0] - 2021-12-27
+
+- Feature: Create Operation succeeds only with 201 status code
+- Feature: Update Operation succeeds only with 200 status code
+- Feature: Create and Update Operation fails with `UnprocessableEntityError` for 422 status code
+
 ## [1.1.5] - 2021-12-16
 
 - Chore: Update LedgerSync to 2.3.1

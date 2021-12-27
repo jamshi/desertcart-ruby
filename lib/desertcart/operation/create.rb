@@ -10,9 +10,14 @@ module Desertcart
       private
 
       def create_in_ledger
-        return LedgerSync::Result.Success(response) if response.success?
-
-        fail(response.status)
+        case response.status
+        when 201
+          LedgerSync::Result.Success(response)
+        when 422
+          rejected
+        else
+          fail(response.status)
+        end
       end
 
       def operate
@@ -40,6 +45,16 @@ module Desertcart
             operation: self,
             response: response,
             message: "Status code: #{status}"
+          ),
+          resource: @resource
+        )
+      end
+
+      def rejected
+        failure(
+          LedgerSync::Error::OperationError::UnprocessableEntityError.new(
+            operation: self,
+            response: response
           ),
           resource: @resource
         )

@@ -10,9 +10,16 @@ module Desertcart
       private
 
       def update_in_ledger
-        return LedgerSync::Result.Success(response) if response.success?
-
-        fail(response.status)
+        case response.status
+        when 200
+          LedgerSync::Result.Success(response)
+        when 404
+          not_found
+        when 422
+          rejected
+        else
+          fail(response.status)
+        end
       end
 
       def operate
@@ -40,6 +47,26 @@ module Desertcart
             operation: self,
             response: response,
             message: "Status code: #{status}"
+          ),
+          resource: @resource
+        )
+      end
+
+      def not_found
+        failure(
+          LedgerSync::Error::OperationError::NotFoundError.new(
+            operation: self,
+            response: response
+          ),
+          resource: @resource
+        )
+      end
+
+      def rejected
+        failure(
+          LedgerSync::Error::OperationError::UnprocessableEntityError.new(
+            operation: self,
+            response: response
           ),
           resource: @resource
         )
