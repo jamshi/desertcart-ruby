@@ -8,6 +8,7 @@ module Desertcart
       attribute :name, type: LedgerSync::Type::String
       attribute :store_uid, type: LedgerSync::Type::String
       attribute :store_id, type: LedgerSync::Type::Integer
+      attribute :purchase_link, type: LedgerSync::Type::String
       attribute :order_reference, type: LedgerSync::Type::String
       attribute :offer_reference, type: LedgerSync::Type::String
       attribute :merchant_id, type: LedgerSync::Type::String

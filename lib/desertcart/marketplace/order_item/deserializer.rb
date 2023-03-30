@@ -10,6 +10,7 @@ module Desertcart
         attribute :name
         attribute :store_uid
         attribute :store_id
+        attribute :purchase_link
         attribute :order_reference
         attribute :offer_reference
         attribute :merchant_id
