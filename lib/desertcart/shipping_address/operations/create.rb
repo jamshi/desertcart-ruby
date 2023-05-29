@@ -6,7 +6,6 @@ module Desertcart
       class Create < Desertcart::Operation::Create
         class Contract < LedgerSync::Ledgers::Contract
           params do
-            required(:ledger_id).filled(:string)
             optional(:first_name).maybe(:string)
             optional(:last_name).maybe(:string)
             optional(:address).maybe(:string)
