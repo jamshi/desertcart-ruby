@@ -23,7 +23,7 @@ module Desertcart
 
         def deserialized_resource
           deserializer.deserialize(
-            hash: response.body[ledger_resource_type],
+            hash: response.body[ledger_resource_type.split('/').last],
             resource: resource
           )
         end

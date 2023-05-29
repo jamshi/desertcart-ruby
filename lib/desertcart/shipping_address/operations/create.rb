@@ -16,14 +16,6 @@ module Desertcart
             optional(:country_code).maybe(:string)
           end
         end
-
-        def ledger_resource_type
-          'shipping_address'
-        end
-
-        def ledger_resource_path
-          'shipping_addresses'
-        end
       end
     end
   end

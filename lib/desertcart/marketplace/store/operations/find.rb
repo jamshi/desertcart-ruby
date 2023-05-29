@@ -11,10 +11,6 @@ module Desertcart
               required(:ledger_id).filled(:string)
             end
           end
-
-          def ledger_namespace_path
-            'marketplace'
-          end
         end
       end
     end
