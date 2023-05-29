@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Desertcart
-  class BuyerAddress
+  class ShippingAddress
     module Operations
       class Create < Desertcart::Operation::Create
         class Contract < LedgerSync::Ledgers::Contract

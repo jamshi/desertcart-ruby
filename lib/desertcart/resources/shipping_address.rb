@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Desertcart
-  class BuyerAddress < Desertcart::Resource
+  class ShippingAddress < Desertcart::Resource
     attribute :first_name, type: LedgerSync::Type::String
     attribute :last_name, type: LedgerSync::Type::String
     attribute :address, type: LedgerSync::Type::String

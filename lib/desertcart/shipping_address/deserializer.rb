@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Desertcart
-  class BuyerAddress
+  class ShippingAddress
     class Deserializer < Desertcart::Deserializer
       id
       attribute :first_name
