@@ -16,10 +16,6 @@ module Desertcart
             end
           end
 
-          def ledger_namespace_path
-            'marketplace'
-          end
-
           def deserialized_resource
             Desertcart::Marketplace::OrderItem::Deserializer.new.deserialize(
               hash: response.body['order_item'],

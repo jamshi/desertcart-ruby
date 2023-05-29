@@ -15,10 +15,6 @@ module Desertcart
         def ledger_resource_type
           @ledger_resource_type ||= 'pending_order_items'
         end
-
-        def ledger_namespace_path
-          'marketplace'
-        end
       end
     end
   end

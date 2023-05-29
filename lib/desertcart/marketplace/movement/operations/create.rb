@@ -15,10 +15,6 @@ module Desertcart
               required(:order_items).filled(:hash, Types::Reference)
             end
           end
-
-          def ledger_namespace_path
-            'marketplace'
-          end
         end
       end
     end

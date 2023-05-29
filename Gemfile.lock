@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     desertcart (1.2.0)
-      ledger_sync (~> 2.3.1)
+      ledger_sync (~> 2.5.0)
 
 GEM
   remote: https://rubygems.org/
@@ -79,8 +79,9 @@ GEM
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     ipaddr (1.2.3)
-    ledger_sync (2.3.1)
+    ledger_sync (2.5.0)
       activemodel
+      dotenv
       dry-schema
       dry-validation
       faraday
@@ -90,13 +91,15 @@ GEM
       nokogiri
       openssl (~> 2.2.0)
       pd_ruby
-      rack (~> 2.2.3)
+      rack (>= 2.2.3)
       rainbow (~> 3.0)
       resonad
       simply_serializable (>= 1.5.1)
     minitest (5.15.0)
     multipart-post (2.1.1)
-    nokogiri (1.12.5-x86_64-linux)
+    nokogiri (1.15.2-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.15.2-x86_64-linux)
       racc (~> 1.4)
     openssl (2.2.1)
       ipaddr
@@ -145,6 +148,7 @@ GEM
     unicode-display_width (2.1.0)
 
 PLATFORMS
+  x86_64-darwin-22
   x86_64-linux
 
 DEPENDENCIES
@@ -155,4 +159,4 @@ DEPENDENCIES
   rubocop
 
 BUNDLED WITH
-   2.2.26
+   2.4.1
