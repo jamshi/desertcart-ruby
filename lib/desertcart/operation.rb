@@ -11,6 +11,7 @@ module Desertcart
       module InstanceMethods
         def ledger_resource_path
           @ledger_resource_path ||= [
+            ledger_namespace_path,
             ledger_resource_type.pluralize,
             resource.ledger_id
           ].compact.join('/')

@@ -35,6 +35,10 @@ module Desertcart
               optional(:note).maybe(:string)
             end
           end
+
+          def ledger_namespace_path
+            'marketplace'
+          end
         end
       end
     end

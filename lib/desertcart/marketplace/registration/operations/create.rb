@@ -17,6 +17,10 @@ module Desertcart
             end
           end
 
+          def ledger_namespace_path
+            'marketplace'
+          end
+
           def deserialized_resource
             Desertcart::AuthenticationToken::Deserializer.new.deserialize(
               hash: response.body['authentication_token'],
