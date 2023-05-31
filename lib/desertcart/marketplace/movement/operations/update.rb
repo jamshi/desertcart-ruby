@@ -11,10 +11,6 @@ module Desertcart
               required(:estimated_arrival_at).filled(:integer)
             end
           end
-
-          def ledger_namespace_path
-            'marketplace'
-          end
         end
       end
     end
